@@ -1,0 +1,6 @@
+Please Read
+
+1.Bug
+
+1- There are still bug in this code and still underwork.
+if you see any bug please send it to issue
