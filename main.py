@@ -1,8 +1,12 @@
 # Decoder
 def decoder(code):
-  value, type = code.split('-')
-  if type == 'text':
-    code += '<p>'+value+'</p>'
+  html_code = ''
+  for html in code:
+    value, type = code.split('-')
+    if type == 'text':
+      html_code += '<p>'+value+'</p> \n'
+    elif type == 'button':
+       html_code += '<button>' + value + '</button> \n'
 
 class App:
   def __init__(self, name):
